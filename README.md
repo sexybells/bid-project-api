@@ -7,6 +7,32 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Bid Project API
+
+This is a Laravel-based API for a bidding platform. The API provides endpoints for user authentication and management.
+
+### Authentication
+
+The API uses JWT (JSON Web Token) for authentication. For detailed information about the authentication endpoints, please refer to the [Authentication Documentation](AUTH_DOCUMENTATION.md).
+
+#### Quick Start
+
+1. Run database migrations and seed the database:
+   ```bash
+   php artisan migrate --seed
+   ```
+
+2. Use the following credentials to test the authentication:
+   - Email: `test@example.com`
+   - Password: `password`
+
+3. Make a POST request to `/api/auth/login` with the above credentials to get a JWT token.
+
+4. Use the token in the Authorization header for subsequent requests:
+   ```
+   Authorization: Bearer {your_token}
+   ```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
